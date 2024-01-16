@@ -1,0 +1,126 @@
+:root {
+  --firstColor: #7e203e;
+  --secondColor: #207e6d;
+  --thirdColor: #f0f2e6;
+  --backgroundColor: #20627e;
+  --fontColor: #1b2226;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--backgroundColor);
+}
+
+header {
+  background-color: var(--firstColor);
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  width: 100vw;
+  box-shadow: 0 5px 5px var(--fontColor);
+}
+
+header h1 span {
+  color: var(--backgroundColor);
+  font-weight: 800;
+}
+
+header h1 {
+  color: var(--secondColor);
+  font-weight: 400;
+  font-size: .8rem;
+}
+
+header .intro {
+  color: var(--thirdColor);
+  font-size: .6em;
+}
+
+section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.2rem;
+}
+
+section .container .img img {
+  width: 15vw;
+  margin-top: 2rem;
+}
+
+section .text-formula {
+  margin: .8rem 0;
+  color: var(--firstColor);
+  line-height: 1.5;
+  font-size: .7rem;
+}
+
+section .input-form {
+  font-size: .7rem;
+}
+
+section .input-form h1 {
+  color: var(--fontColor);
+}
+
+section .input-form form {
+  margin-top: .8rem;
+}
+
+section .input-form form input {
+  padding: .5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+section .input-form form button {
+  padding: .5rem;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--firstColor);
+  color: var(--thirdColor);
+  margin: .5rem;
+}
+
+section .input-form form button:hover {
+  background-color: var(--secondColor);
+  cursor: pointer;
+}
+
+section .input-form .result {
+  margin-top: .8rem;
+  line-height: 1.5;
+}
+
+section .input-form .result {
+  color: var(--fontColor);
+}
+
+section .ganti {
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+section .ganti a {
+  text-decoration: none;
+  color: var(--thirdColor);
+  padding: 1rem;
+  background-color: var(--fontColor);
+  font-size: .6rem;
+  border-radius: 5px;
+}
+
+section .ganti a:active {
+  background-color: var(--secondColor);
+}

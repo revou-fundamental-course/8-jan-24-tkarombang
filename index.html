@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matematik (Persegi)</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -18,30 +19,33 @@
     </div>
   </header>
   <section id="keliling-bangunDatar">
-    <div class="img">
-      <img src="bujur-sangkar.jpg" alt="Bangun Datar">
+    <div class="container">
+      <div class="img">
+        <img src="bujur-sangkar.jpg" alt="Bangun Datar">
+      </div>
+      <div class="text-formula">
+        <span>Rumus Luas Persegi yaitu :</span>
+        <h2>L = S X S</h2>
+        <p>Di mana :</p>
+        <p>L = Luas</p>
+        <p>S = Sisi</p>
+      </div>
+      <div class="input-form">
+        <h1>Hitung Luas Persegi</h1>
+        <form action="#">
+          <input type="number" id="nilai" placeholder="Enter Value">
+          <button type="submit" id="btn-calculate">Calculate</button>
+          <button type="reset" id="btn-reset">Reset</button>
+        </form>
+        <div class="result">
+          <h4>L = <span id="formula">S X S</span></h4>
+          <h4>L = <span id="result-formula"></span></h4>
+          <h4>L = <span id="result-calculate"></span></h4>
+        </div>
+      </div>
     </div>
-    <div class="text-formula">
-      <span>Rumus Luas Persegi yaitu :</span>
-      <h2>L = S X S</h2>
-      <p>Di mana :</p>
-      <p>L = Luas</p>
-      <p>S = Sisi</p>
-    </div>
-  </section>
-  <section id="input-section">
-    <h1>Hitung Luas Persegi</h1>
-    <form action="#">
-      <input type="number" id="nilai" placeholder="Enter Value">
-      <button type="submit" id="btn-calculate">Calculate</button>
-      <button type="reset" id="btn-reset">Reset</button>
-    </form>
-    <div class="result">
-      <h2>L =
-        <span id="formula">S X S</span>
-      </h2>
-      <span id="result-formula">40 X 40</span>
-      <span id="result-calculate">1600</span>
+    <div class="ganti">
+      <a href="#" id="change">Hitung Keliling Persegi</a>
     </div>
   </section>
 </body>
