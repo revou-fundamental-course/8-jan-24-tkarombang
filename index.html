@@ -19,10 +19,10 @@
     </div>
   </header>
   <section id="keliling-bangunDatar">
-    <div class="container">
-      <div class="img">
-        <img src="bujur-sangkar.jpg" alt="Bangun Datar">
-      </div>
+    <div class="img">
+      <img src="bujur-sangkar.jpg" alt="Bangun Datar">
+    </div>
+    <div class="luas-persegi">
       <div class="text-formula">
         <span>Rumus Luas Persegi yaitu :</span>
         <h2>L = S X S</h2>
@@ -31,16 +31,38 @@
         <p>S = Sisi</p>
       </div>
       <div class="input-form">
-        <h1>Hitung Luas Persegi</h1>
+        <h1 id="hitung-h1">Hitung Luas Persegi</h1>
         <form action="#">
-          <input type="number" id="nilai" placeholder="Enter Value">
-          <button type="submit" id="btn-calculate">Calculate</button>
+          <input type="number" id="nilai-luas" placeholder="Enter Value">
+          <button type="submit" id="btn-calculate-luas" class="btn-calculate">Calculate</button>
           <button type="reset" id="btn-reset">Reset</button>
         </form>
         <div class="result">
           <h4>L = <span id="formula">S X S</span></h4>
-          <h4>L = <span id="result-formula"></span></h4>
-          <h4>L = <span id="result-calculate"></span></h4>
+          <h4>L = <span id="result-formula-luas"></span></h4>
+          <h4>L = <span id="result-calculate-luas"></span></h4>
+        </div>
+      </div>
+    </div>
+    <div class="keliling-persegi">
+      <div class="text-formula">
+        <span>Rumus Keliling Persegi yaitu :</span>
+        <h2>K = 4 X S</h2>
+        <p>Di mana :</p>
+        <p>K = Keliling</p>
+        <p>S = Sisi</p>
+      </div>
+      <div class="input-form">
+        <h1 id="hitung-h2">Hitung Keliling Persegi</h1>
+        <form action="#">
+          <input type="number" id="nilai-keliling" placeholder="Enter Value">
+          <button type="submit" id="btn-calculate-keliling" class="btn-calculate">Calculate</button>
+          <button type="reset" id="btn-reset">Reset</button>
+        </form>
+        <div class="result">
+          <h4>K = <span id="formula">4 X S</span></h4>
+          <h4>K = 4 X<span id="result-formula-keliling"></span></h4>
+          <h4>K = <span id="result-calculate-keliling"></span></h4>
         </div>
       </div>
     </div>
@@ -48,6 +70,27 @@
       <a href="#" id="change">Hitung Keliling Persegi</a>
     </div>
   </section>
+
+  <div class="modal-alert" id="item-modal-alert">
+    <div class="modal-container">
+      <h1>Value is Empty</h1>
+      <a href="#" class="close-ok">X</a>
+      <div class="modal-content">
+        <p>Please insert value if you want to see the result of calculate the square</p>
+        <!-- <video src="sample.m4v" width="200px" controls></video> -->
+        <figure>
+          <figcaption>
+            for Example
+          </figcaption>
+          <video autoplay loop muted class="video-review">
+            <source src="sample.m4v" type="video/mp4">
+          </video>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
