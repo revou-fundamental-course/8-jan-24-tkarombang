@@ -25,7 +25,8 @@ header {
   background-color: var(--firstColor);
   text-align: center;
   padding: 1rem;
-  position: relative;
+  position: fixed;
+  top: 0;
   width: 100vw;
   box-shadow: 0 5px 5px var(--fontColor);
 }
@@ -49,7 +50,7 @@ header .intro {
 section .img {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 6.5rem;
 }
 
 section .img img {
