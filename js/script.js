@@ -1,5 +1,3 @@
-// const btnCalculateLuas = document.getElementById('btn-calculate-luas');
-// const btnCalculateKeliling = document.getElementById('btn-calculate-keliling');
 const btnCalculate = document.querySelectorAll('.btn-calculate');
 const resultFormulaLuas = document.getElementById('result-formula-luas');
 const resultCalculateLuas = document.getElementById('result-calculate-luas');
@@ -14,7 +12,7 @@ btnCalculate.forEach((btn) => {
   const modalAlert = document.querySelector('.modal-alert');
   const btnCloseX = document.querySelector('.close-ok');
 
-  btn.onclick = () => {
+  btn.onclick = (e) => {
     const inputNilaiLuas = parseFloat(document.getElementById('nilai-luas').value);
     const inputNilaiKeliling = parseFloat(document.getElementById('nilai-keliling').value);
     if ((!inputNilaiLuas) && (!inputNilaiKeliling)) {
@@ -38,8 +36,9 @@ btnCalculate.forEach((btn) => {
     btnCloseX.onclick = () => {
       modalAlert.style.display = 'none';
     }
-
+    e.preventDefault();
   }
+
 })
 
 btnChange.onclick = (e) => {
